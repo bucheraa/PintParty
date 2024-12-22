@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Showcase</title>
+    <title>Modern App Showcase</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: #fff;
-            line-height: 1.6;
+            line-height: 1.8;
+            overflow-x: hidden;
         }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.7);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         header h1 {
             font-size: 2.5em;
-            color: #ffcc00;
+            font-weight: 700;
+            color: #ffd700;
+            margin: 0;
         }
         header nav a {
             margin: 0 15px;
@@ -34,19 +40,23 @@
             transition: color 0.3s ease;
         }
         header nav a:hover {
-            color: #ffcc00;
+            color: #ffd700;
         }
 
         .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             padding: 150px 20px;
-            background: url('hero-bg.jpg') no-repeat center center/cover;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('hero-bg.jpg') no-repeat center center/cover;
             color: #fff;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-            animation: fadeIn 2s ease;
         }
         .hero h2 {
             font-size: 4em;
+            font-weight: 700;
             margin-bottom: 20px;
         }
         .hero p {
@@ -54,15 +64,66 @@
             max-width: 700px;
             margin: 0 auto;
         }
+        .hero button {
+            margin-top: 30px;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            background: #ffd700;
+            color: #000;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .hero button:hover {
+            background: #ffc107;
+            transform: translateY(-3px);
+        }
+
+        .features {
+            padding: 60px 20px;
+            text-align: center;
+            background: #f9f9f9;
+            color: #333;
+        }
+        .features h2 {
+            font-size: 3em;
+            font-weight: 700;
+            color: #6a11cb;
+            margin-bottom: 40px;
+        }
+        .features .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .features .grid div {
+            padding: 20px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .features .grid div:hover {
+            transform: scale(1.05);
+        }
+        .features .grid div h3 {
+            font-size: 1.5em;
+            color: #6a11cb;
+            margin-bottom: 15px;
+        }
 
         .screenshots {
             padding: 60px 20px;
             text-align: center;
+            background: #fff;
         }
         .screenshots h2 {
             margin-bottom: 30px;
             font-size: 3em;
-            color: #ffcc00;
+            color: #6a11cb;
         }
         .screenshots .gallery {
             display: flex;
@@ -86,17 +147,18 @@
         .cta {
             text-align: center;
             padding: 60px 20px;
-            background: rgba(0, 0, 0, 0.8);
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            color: #fff;
         }
         .cta h2 {
             margin-bottom: 30px;
             font-size: 2.5em;
-            color: #ffcc00;
+            font-weight: 700;
         }
         .cta button {
             padding: 15px 40px;
             font-size: 1.3em;
-            background: #ffcc00;
+            background: #ffd700;
             color: #000;
             border: none;
             border-radius: 30px;
@@ -104,7 +166,7 @@
             transition: background 0.3s ease, transform 0.2s ease;
         }
         .cta button:hover {
-            background: #e6b800;
+            background: #ffc107;
             transform: translateY(-3px);
         }
 
@@ -116,7 +178,7 @@
             color: #aaa;
         }
         footer a {
-            color: #ffcc00;
+            color: #ffd700;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -143,6 +205,25 @@
     <section class="hero">
         <h2>Welcome to AppName</h2>
         <p>Your ultimate app for simplifying your daily tasks. Experience efficiency and productivity like never before.</p>
+        <button>Get Started</button>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Features</h2>
+        <div class="grid">
+            <div>
+                <h3>Feature One</h3>
+                <p>Discover the power of our innovative tools designed to make your life easier.</p>
+            </div>
+            <div>
+                <h3>Feature Two</h3>
+                <p>Seamlessly integrate productivity into your day-to-day tasks.</p>
+            </div>
+            <div>
+                <h3>Feature Three</h3>
+                <p>Experience unmatched performance and functionality.</p>
+            </div>
+        </div>
     </section>
 
     <section id="screenshots" class="screenshots">
