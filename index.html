@@ -1,249 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pint Party - Redefined</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-            color: #333;
-            -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        header h1 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: #0071e3;
-            margin: 0;
-        }
-        header nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        header nav a:hover {
-            color: #0071e3;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pint Party - Drinking Games</title>
+  <style>
+    /* -------- RESET & BASIC STYLES -------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", 
+                   Helvetica, Arial, sans-serif;
+    }
 
-        .hero {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(135deg, #0071e3, #0049a5);
-            color: #fff;
-            background-size: cover;
-        }
-        .hero h2 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 30px;
-            line-height: 1.5;
-        }
-        .hero button {
-            padding: 12px 30px;
-            font-size: 1rem;
-            background: #fff;
-            color: #0071e3;
-            border: 2px solid #fff;
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-        .hero button:hover {
-            background: #0071e3;
-            color: #fff;
-        }
+    body {
+      color: #1c1c1e;
+      background-color: #fff;
+      line-height: 1.5;
+    }
 
-        .features {
-            padding: 80px 20px;
-            text-align: center;
-            background: #f5f5f7;
-        }
-        .features h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 40px;
-        }
-        .features .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .features .grid div {
-            padding: 20px;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .features .grid div:hover {
-            transform: scale(1.05);
-        }
-        .features .grid div h3 {
-            font-size: 1.5rem;
-            color: #0071e3;
-            margin-bottom: 15px;
-        }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-        .screenshots {
-            padding: 80px 20px;
-            text-align: center;
-            background: #fff;
-        }
-        .screenshots h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 30px;
-        }
-        .screenshots .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        .screenshots img {
-            width: 260px;
-            height: 480px;
-            object-fit: cover;
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .screenshots img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
+    /* -------- NAVBAR -------- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      border-bottom: 1px solid #e0e0e0;
+    }
 
-        .cta {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #0071e3, #0049a5);
-            color: #fff;
-        }
-        .cta h2 {
-            margin-bottom: 20px;
-            font-size: 2rem;
-            font-weight: 700;
-        }
-        .cta button {
-            padding: 12px 30px;
-            font-size: 1rem;
-            background: #fff;
-            color: #0071e3;
-            border: 2px solid #fff;
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-        .cta button:hover {
-            background: #0071e3;
-            color: #fff;
-        }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #f5f5f7;
-            font-size: 0.9rem;
-            color: #666;
-        }
-        footer a {
-            color: #0071e3;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        footer a:hover {
-            color: #0049a5;
-        }
-    </style>
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links a {
+      color: #0071e3;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #005bb5;
+    }
+
+    /* -------- HERO SECTION -------- */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 5% 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    /* Download button styled to mimic Apple’s aesthetic */
+    .download-btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #0071e3;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #005bb5;
+    }
+
+    /* -------- SCREENSHOTS GRID -------- */
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 1.5rem;
+      padding: 3rem 5%;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .screenshots img:hover {
+      transform: scale(1.02);
+    }
+
+    /* -------- PRIVACY SECTION -------- */
+    .privacy-section {
+      padding: 3rem 5%;
+      background-color: #f9f9f9;
+    }
+
+    .privacy-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .privacy-section p {
+      max-width: 700px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* -------- FOOTER -------- */
+    footer {
+      text-align: center;
+      padding: 2rem 5%;
+      color: #888;
+      font-size: 0.875rem;
+    }
+
+    footer a {
+      color: #0071e3;
+    }
+
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Pint Party</h1>
-        <nav>
-            <a href="#features">Features</a>
-            <a href="#screenshots">Screenshots</a>
-            <a href="#download">Download</a>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h2>Welcome to AppName</h2>
-        <p>Your ultimate app for simplifying your daily tasks. Experience efficiency and productivity like never before.</p>
-        <button>Get Started</button>
-    </section>
+  <!-- NAVIGATION BAR -->
+  <header>
+    <div class="logo">Pint Party</div>
+    <nav>
+      <div class="nav-links">
+        <a href="#screenshots">Screenshots</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+    </nav>
+  </header>
 
-    <section class="features" id="features">
-        <h2>Features</h2>
-        <div class="grid">
-            <div>
-                <h3>Feature One</h3>
-                <p>Discover the power of our innovative tools designed to make your life easier.</p>
-            </div>
-            <div>
-                <h3>Feature Two</h3>
-                <p>Seamlessly integrate productivity into your day-to-day tasks.</p>
-            </div>
-            <div>
-                <h3>Feature Three</h3>
-                <p>Experience unmatched performance and functionality.</p>
-            </div>
-        </div>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Welcome to Pint Party</h1>
+    <p>The ultimate app for fun and creative drinking games. Spice up your party 
+       with endless mini-games, challenges, and unforgettable moments.</p>
+    <!-- This button could be linked to the App Store URL directly -->
+    <a class="download-btn" 
+       href="https://apps.apple.com/" 
+       target="_blank" 
+       rel="noopener noreferrer">
+      Download on the App Store
+    </a>
+  </section>
 
-    <section id="screenshots" class="screenshots">
-        <h2>App Screenshots</h2>
-        <div class="gallery">
-            <img src="./Screenshots/1.png" alt="Screenshot 1">
-            <img src="./Screenshots/2.png" alt="Screenshot 2">
-            <img src="./Screenshots/3.png" alt="Screenshot 3">
-            <img src="./Screenshots/4.png" alt="Screenshot 4">
-            <img src="./Screenshots/5.png" alt="Screenshot 5">
-            <img src="./Screenshots/6.png" alt="Screenshot 6">
-            <img src="./Screenshots/7.png" alt="Screenshot 7">
-        </div>
-    </section>
+  <!-- SCREENSHOTS GRID -->
+  <section id="screenshots" class="screenshots">
+    <!-- Replace src with real screenshot URLs or local images -->
+    <img src="https://via.placeholder.com/400x700/0071e3/ffffff?text=Screenshot+1" alt="Screenshot 1">
+    <img src="https://via.placeholder.com/400x700/0071e3/ffffff?text=Screenshot+2" alt="Screenshot 2">
+    <img src="https://via.placeholder.com/400x700/0071e3/ffffff?text=Screenshot+3" alt="Screenshot 3">
+    <img src="https://via.placeholder.com/400x700/0071e3/ffffff?text=Screenshot+4" alt="Screenshot 4">
+    <img src="https://via.placeholder.com/400x700/0071e3/ffffff?text=Screenshot+5" alt="Screenshot 5">
+    <img src="https://via.placeholder.com/400x700/0071e3/ffffff?text=Screenshot+6" alt="Screenshot 6">
+    <img src="https://via.placeholder.com/400x700/0071e3/ffffff?text=Screenshot+7" alt="Screenshot 7">
+  </section>
 
-    <section class="cta" id="download">
-        <h2>Download Pint Party Today!</h2>
-        <button>Download Now</button>
-    </section>
+  <!-- PRIVACY SECTION -->
+  <section id="privacy" class="privacy-section">
+    <h2>Privacy Policy</h2>
+    <p>
+      At Pint Party, your privacy is of utmost importance to us. We ensure that
+      no personal data is collected without your explicit consent. Any data used
+      is solely for the purpose of enhancing your experience within the app.
+      Please read our full privacy policy to understand how we collect, use, 
+      and safeguard your information. If you have any questions or concerns, 
+      do not hesitate to contact us.
+    </p>
+  </section>
 
-    <footer>
-        &copy; 2024 Pint Party. All rights reserved. <a href="#">Privacy Policy</a>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2024 Pint Party. All rights reserved.</p>
+    <p>
+      <a href="mailto:support@pintparty.com">Contact Support</a>
+    </p>
+  </footer>
+
 </body>
 </html>
