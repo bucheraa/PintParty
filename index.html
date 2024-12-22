@@ -6,28 +6,31 @@
     <title>App Showcase</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             color: #fff;
+            line-height: 1.6;
         }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background: rgba(0, 0, 0, 0.7);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         header h1 {
-            font-size: 2em;
+            font-size: 2.5em;
+            color: #ffcc00;
         }
         header nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #fff;
-            font-size: 1em;
+            font-size: 1.1em;
+            font-weight: 500;
             transition: color 0.3s ease;
         }
         header nav a:hover {
@@ -36,27 +39,30 @@
 
         .hero {
             text-align: center;
-            padding: 100px 20px;
+            padding: 150px 20px;
             background: url('hero-bg.jpg') no-repeat center center/cover;
-            animation: fadeIn 1.5s ease;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 2s ease;
         }
         .hero h2 {
-            font-size: 3em;
+            font-size: 4em;
             margin-bottom: 20px;
         }
         .hero p {
-            font-size: 1.2em;
-            max-width: 600px;
+            font-size: 1.5em;
+            max-width: 700px;
             margin: 0 auto;
         }
 
         .screenshots {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         .screenshots h2 {
-            margin-bottom: 20px;
-            font-size: 2.5em;
+            margin-bottom: 30px;
+            font-size: 3em;
+            color: #ffcc00;
         }
         .screenshots .gallery {
             display: flex;
@@ -65,45 +71,57 @@
             flex-wrap: wrap;
         }
         .screenshots img {
-            width: 250px;
-            height: 500px;
+            width: 240px;
+            height: 480px;
             object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .screenshots img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
         }
 
         .cta {
             text-align: center;
-            padding: 50px 20px;
-            background: rgba(0, 0, 0, 0.6);
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.8);
         }
         .cta h2 {
-            margin-bottom: 20px;
-            font-size: 2em;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            color: #ffcc00;
         }
         .cta button {
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 15px 40px;
+            font-size: 1.3em;
             background: #ffcc00;
             color: #000;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: background 0.3s ease, transform 0.2s ease;
         }
         .cta button:hover {
             background: #e6b800;
+            transform: translateY(-3px);
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            font-size: 0.9em;
+            background: rgba(0, 0, 0, 0.9);
+            font-size: 1em;
+            color: #aaa;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #fff;
         }
 
         @keyframes fadeIn {
@@ -146,7 +164,7 @@
     </section>
 
     <footer>
-        &copy; 2024 Pint Party All rights reserved.
+        &copy; 2024 Pint Party. All rights reserved. <a href="#">Privacy Policy</a>
     </footer>
 </body>
 </html>
