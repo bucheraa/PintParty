@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2em;
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        header nav a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            animation: fadeIn 1.5s ease;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .screenshots {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .screenshots h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .screenshots .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .screenshots img {
+            width: 250px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .screenshots img:hover {
+            transform: scale(1.1);
+        }
+
+        .cta {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .cta h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .cta button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background: #ffcc00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .cta button:hover {
+            background: #e6b800;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            font-size: 0.9em;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AppName</h1>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#download">Download</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to AppName</h2>
+        <p>Your ultimate app for simplifying your daily tasks. Experience efficiency and productivity like never before.</p>
+    </section>
+
+    <section id="screenshots" class="screenshots">
+        <h2>App Screenshots</h2>
+        <div class="gallery">
+            <img src="screenshot1.jpg" alt="Screenshot 1">
+            <img src="screenshot2.jpg" alt="Screenshot 2">
+            <img src="screenshot3.jpg" alt="Screenshot 3">
+        </div>
+    </section>
+
+    <section class="cta" id="download">
+        <h2>Download AppName Today!</h2>
+        <button>Download Now</button>
+    </section>
+
+    <footer>
+        &copy; 2024 AppName. All rights reserved.
+    </footer>
+</body>
+</html>
