@@ -3,65 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Datenschutzerklärung</title>
+  <title>Datenschutzerklärung – Pint Party</title>
   <style>
-    /* Grundlegendes Seitenlayout */
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+    /* -------- RESET & BASIC STYLES -------- */
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+                   Helvetica, Arial, sans-serif;
     }
 
-    /* Container für Kopfbereich und Inhalt */
-    header, main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #ffffff;
+    body {
+      color: #1c1c1e;
+      background-color: #ffffff;
+      line-height: 1.6;
     }
 
+    a {
+      text-decoration: none;
+      color: #0071e3;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* -------- HEADER (ANLEHNUNG AN LANDING-PAGE) -------- */
     header {
-      text-align: center;
-      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1rem;
     }
 
-    header h1 {
-      margin: 0;
-      padding: 10px 0;
-    }
-
+    /* -------- HAUPTTEIL (MAIN) -------- */
     main {
-      margin-bottom: 40px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 5%;
+    }
+
+    main h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 2rem;
     }
 
     section h2 {
-      margin-top: 30px;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
       font-size: 1.2rem;
       color: #333;
     }
 
-    /* Abstände in Absätzen und Listen */
     section p,
     section li {
       margin: 10px 0;
       color: #555;
     }
 
-    /* Zusätzlicher Abstand zwischen zwei aufeinanderfolgenden Absätzen */
-    section p + p {
-      margin-top: 0;
+    section ul {
+      list-style-type: disc;
+      padding-left: 20px;
     }
+
+    section h3 {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* -------- FOOTER (OPTIONAL) -------- */
+    footer {
+      text-align: center;
+      padding: 2rem 5%;
+      color: #888;
+      font-size: 0.875rem;
+      border-top: 1px solid #e0e0e0;
+      margin-top: 2rem;
+    }
+
   </style>
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <h1>Datenschutzerklärung</h1>
+    <div class="logo">Pint Party</div>
+    <nav>
+      <div class="nav-links">
+        <!-- Link zurück zur Startseite -->
+        <a href="index.html">Zur Startseite</a>
+      </div>
+    </nav>
   </header>
 
+  <!-- MAIN CONTENT: DATENSCHUTZERKLÄRUNG -->
   <main>
+    <h1>Datenschutzerklärung</h1>
+
     <!-- EINLEITUNG -->
     <section>
       <p>
@@ -77,7 +132,8 @@
       <h2>1. Verantwortlicher</h2>
       <p>
         <strong>Name:</strong> Aaron Bucher<br>
-        <strong>E-Mail-Adresse:</strong> <a href="mailto:aaron.bucher@icloud.com">aaron.bucher@icloud.com</a>
+        <strong>E-Mail-Adresse:</strong> 
+        <a href="mailto:aaron.bucher@icloud.com">aaron.bucher@icloud.com</a>
       </p>
     </section>
 
@@ -174,7 +230,7 @@
         <li>
           <strong>Widerspruchsrecht:</strong> 
           Sie können aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit der Verarbeitung 
-          Sie betreffender personenbezogener Daten widersprechen, wenn diese auf Art. 6 Abs. 1 lit. e) oder f) DSGVO beruht.
+          Sie betreffender personenbezogenen Daten widersprechen, wenn diese auf Art. 6 Abs. 1 lit. e) oder f) DSGVO beruht.
         </li>
         <li>
           <strong>Widerrufsrecht bei Einwilligungen:</strong> 
@@ -281,7 +337,11 @@
     <!-- 10. Begriffsdefinitionen -->
     <section>
       <h2>10. Begriffsdefinitionen</h2>
-      <p>Soweit in dieser Datenschutzerklärung Begriffe verwendet werden, die in der DSGVO gesetzlich definiert sind (z. B. „personenbezogene Daten“, „Verarbeitung“, „Verantwortlicher“), gelten deren Definitionen. Zur besseren Verständlichkeit erläutern wir die wichtigsten Begriffe zusätzlich:</p>
+      <p>
+        Soweit in dieser Datenschutzerklärung Begriffe verwendet werden, die in der DSGVO gesetzlich definiert sind (z. B. 
+        „personenbezogene Daten“, „Verarbeitung“, „Verantwortlicher“), gelten deren Definitionen. Zur besseren 
+        Verständlichkeit erläutern wir die wichtigsten Begriffe zusätzlich:
+      </p>
       <ul>
         <li>
           <strong>Meta-, Kommunikations- und Verfahrensdaten:</strong> 
@@ -290,7 +350,8 @@
         </li>
         <li>
           <strong>Nutzungsdaten:</strong> 
-          Daten, die erfassen, wie Nutzer mit digitalen Angeboten interagieren (z. B. welche Funktionen einer App genutzt werden, wie häufig Zugriffe erfolgen, IP-Adressen).
+          Daten, die erfassen, wie Nutzer mit digitalen Angeboten interagieren (z. B. welche Funktionen einer App genutzt werden, 
+          wie häufig Zugriffe erfolgen, IP-Adressen).
         </li>
         <li>
           <strong>Personenbezogene Daten:</strong> 
@@ -310,7 +371,7 @@
           Jeder Vorgang im Zusammenhang mit personenbezogenen Daten (z. B. Erheben, Speichern, Übermitteln, Löschen).
         </li>
       </ul>
-      <p><strong>Stand dieser Datenschutzerklärung:</strong> [bitte aktuelles Datum einfügen]</p>
+      <p><strong>Stand dieser Datenschutzerklärung:</strong> [Bitte aktuelles Datum einfügen]</p>
     </section>
 
     <!-- KONTAKT / ABSCHLUSS -->
@@ -322,9 +383,16 @@
       </p>
       <p>
         <strong>Aaron Bucher</strong><br />
-        E-Mail: <a href="mailto:aaron.bucher@icloud.com">aaron.bucher@icloud.com</a>
+        E-Mail: 
+        <a href="mailto:aaron.bucher@icloud.com">aaron.bucher@icloud.com</a>
       </p>
     </section>
   </main>
+
+  <!-- FOOTER (optional) -->
+  <footer>
+    <p>© 2024 Pint Party. Alle Rechte vorbehalten.</p>
+  </footer>
+
 </body>
 </html>
