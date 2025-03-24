@@ -1,28 +1,117 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Datenschutzerklärung - Vacation Tracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Datenschutzerklärung – Vacation Tracker</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
+    /* -------- RESET & BASIC STYLES -------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+                   Helvetica, Arial, sans-serif;
     }
-    h1, h2, h3 {
+
+    body {
+      color: #1c1c1e;
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0071e3;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* -------- HEADER (ANLEHNUNG AN LANDING-PAGE) -------- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    /* -------- HAUPTTEIL (MAIN) -------- */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 5%;
+    }
+
+    main h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
       color: #333;
     }
-    hr {
-      margin: 20px 0;
+
+    section p,
+    section li {
+      margin: 10px 0;
+      color: #555;
     }
-    ul {
-      margin-left: 20px;
+
+    section ul {
+      list-style-type: disc;
+      padding-left: 20px;
     }
+
+    section h3 {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* -------- FOOTER (OPTIONAL) -------- */
+    footer {
+      text-align: center;
+      padding: 2rem 5%;
+      color: #888;
+      font-size: 0.875rem;
+      border-top: 1px solid #e0e0e0;
+      margin-top: 2rem;
+    }
+
   </style>
 </head>
 <body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Pint Party</div>
+    <nav>
+      <div class="nav-links">
+        <!-- Link zurück zur Startseite -->
+        <a href="index.html">Zur Startseite</a>
+      </div>
+    </nav>
+  </header>
   <h1>Datenschutzerklärung</h1>
   <p>Stand: 24.03.2025</p>
   <p>
