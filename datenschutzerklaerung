@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Datenschutzerklärung - Vacation Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    hr {
+      margin: 20px 0;
+    }
+    ul {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Datenschutzerklärung</h1>
+  <p>Stand: [Bitte aktuelles Datum einfügen]</p>
+  <p>
+    Wir freuen uns über Ihr Interesse an unserer App <strong>Vacation Tracker</strong> und informieren Sie im Folgenden umfassend über die Verarbeitung Ihrer personenbezogenen Daten im Rahmen der Nutzung unserer App gemäß der Datenschutz-Grundverordnung (DSGVO) sowie weiterer anwendbarer Datenschutzbestimmungen.
+  </p>
+  <hr>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    <strong>Name:</strong><br>
+    Aaron Bucher
+  </p>
+  <p>
+    <strong>E-Mail-Adresse:</strong><br>
+    aaron.bucher@icloud.com
+  </p>
+  <hr>
+
+  <h2>2. Übersicht der Verarbeitungen</h2>
+  <h3>Funktionen der App</h3>
+  <ul>
+    <li>
+      <strong>Kontinuierliche Standortverfolgung:</strong> Die App erfasst den Standort des Nutzers kontinuierlich – auch im Hintergrund – solange die jeweilige Standortberechtigung erteilt ist. Diese Standortdaten werden ausschließlich lokal auf Ihrem Gerät verarbeitet und dienen dazu, automatisch besuchte Länder zu erkennen und in der App anzuzeigen.
+    </li>
+    <li>
+      <strong>Bilder-Scanning:</strong> Beim Scannen von Bildern werden ausschließlich die in den Bildmetadaten enthaltenen Geodaten extrahiert, um daraus die besuchten Länder abzuleiten.
+    </li>
+    <li>
+      <strong>Manuelle Reiseeinträge:</strong> Nutzer können Reisen manuell hinzufügen, indem sie das jeweilige Land sowie das Start- und Enddatum der Reise angeben.
+    </li>
+    <li>
+      <strong>Datenverarbeitung:</strong> Sämtliche in der App erfassten Daten (Standortdaten, aus Bildmetadaten extrahierte Geodaten und manuelle Eingaben) werden ausschließlich lokal auf Ihrem Endgerät gespeichert. Es erfolgt keinerlei Datentransfer an externe Server oder Drittdienste.
+    </li>
+    <li>
+      <strong>Kartendarstellung:</strong> Zur Darstellung der Karte wird Apple Maps genutzt. Die Datenverarbeitung im Zusammenhang mit Apple Maps erfolgt durch Apple in eigener datenschutzrechtlicher Verantwortung.
+    </li>
+    <li>
+      <strong>Support-Website:</strong> Unsere Support-Website, auf der unter anderem diese Datenschutzerklärung veröffentlicht wird, wird über GitHub Pages gehostet. Die Website dient ausschließlich der Bereitstellung von Informationen und Screenshots; es werden dabei lediglich notwendige Protokolldaten (z. B. Zugriffszeiten, IP-Adressen) erhoben.
+    </li>
+  </ul>
+
+  <h3>2.1. Verarbeitung personenbezogener Daten</h3>
+  <ul>
+    <li>
+      <strong>In der App Vacation Tracker:</strong>
+      <ul>
+        <li>
+          <strong>Standortdaten:</strong> Diese werden kontinuierlich (auch im Hintergrund) erfasst, solange Sie die entsprechende Berechtigung erteilt haben.
+        </li>
+        <li>
+          <strong>Geodaten aus Bildmetadaten:</strong> Beim Scannen von Bildern werden ausschließlich die enthaltenen Geodaten extrahiert.
+        </li>
+        <li>
+          <strong>Manuelle Reiseeinträge:</strong> Bei der manuellen Eingabe werden lediglich das ausgewählte Land sowie das Start- und Enddatum gespeichert.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Kontaktaufnahme über E-Mail:</strong> Sollten Sie uns per E-Mail kontaktieren, speichern wir die dabei übermittelten Daten (z. B. Name, E-Mail-Adresse und weitere freiwillig übermittelte Informationen) nur so lange, wie es zur Bearbeitung Ihrer Anfrage notwendig ist. Eine Weitergabe an Dritte erfolgt nicht.
+    </li>
+  </ul>
+  <hr>
+
+  <h2>3. Maßgebliche Rechtsgrundlagen</h2>
+  <p>Die Verarbeitung Ihrer Daten erfolgt auf Grundlage folgender Rechtsgrundlagen:</p>
+  <ul>
+    <li>
+      <strong>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO):</strong> Die kontinuierliche Erfassung von Standortdaten sowie das Scannen von Bildern erfolgen nur, wenn Sie hierzu Ihre ausdrückliche Einwilligung erteilt haben. Sie können diese Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.
+    </li>
+    <li>
+      <strong>Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO):</strong> Die Verarbeitung der Daten erfolgt ferner zur Gewährleistung der sicheren und funktionsgerechten Bereitstellung der App. Unser berechtigtes Interesse liegt darin, Ihnen eine komfortable und zuverlässige Nutzung der App zu ermöglichen.
+    </li>
+  </ul>
+  <p>Bitte beachten Sie, dass ergänzend nationale Datenschutzvorgaben (z. B. das Bundesdatenschutzgesetz) gelten können.</p>
+  <hr>
+
+  <h2>4. Allgemeine Informationen zur Datenspeicherung und Löschung</h2>
+  <ul>
+    <li>
+      <strong>Speicherung:</strong> Alle in der App erfassten Daten werden ausschließlich lokal auf Ihrem Endgerät gespeichert. Es gibt weder eine Export- noch eine Backup-Funktion innerhalb der App.
+    </li>
+    <li>
+      <strong>Löschung:</strong> Mit der Deinstallation der App oder dem manuellen Löschen der Daten werden alle lokal gespeicherten personenbezogenen Daten unwiderruflich gelöscht, sofern keine gesetzlichen Aufbewahrungsfristen entgegenstehen.
+    </li>
+    <li>
+      <strong>Widerruf der Einwilligung:</strong> Sie können Ihre Einwilligung zur kontinuierlichen Standortverfolgung und anderen Datenverarbeitungen jederzeit widerrufen, indem Sie die entsprechenden Berechtigungen in den Systemeinstellungen Ihres Geräts entziehen. In diesem Fall werden die entsprechenden Daten nicht weiter erfasst.
+    </li>
+  </ul>
+  <hr>
+
+  <h2>5. Zielgruppe</h2>
+  <p>
+    Die App <strong>Vacation Tracker</strong> richtet sich an alle Nutzer, die ihre besuchten Länder erfassen und nachvollziehen möchten. Da Standortdaten und Bildmetadaten sensible personenbezogene Daten darstellen, obliegt es Ihnen als Nutzer, im Rahmen der Berechtigungsvergabe selbst zu entscheiden, ob und in welchem Umfang Sie die Funktionen der App aktivieren.
+  </p>
+  <hr>
+
+  <h2>6. Rechte der betroffenen Personen</h2>
+  <p>Sie haben als betroffene Person insbesondere folgende Rechte, soweit die DSGVO dies vorsieht:</p>
+  <ul>
+    <li>
+      <strong>Widerspruchsrecht:</strong> Sie können der Verarbeitung Ihrer personenbezogenen Daten widersprechen, sofern diese auf Art. 6 Abs. 1 lit. f DSGVO beruht.
+    </li>
+    <li>
+      <strong>Widerrufsrecht bei Einwilligungen:</strong> Sie haben das Recht, erteilte Einwilligungen jederzeit mit Wirkung für die Zukunft zu widerrufen.
+    </li>
+    <li>
+      <strong>Auskunftsrecht:</strong> Sie können eine Bestätigung darüber verlangen, ob und welche personenbezogenen Daten von Ihnen verarbeitet werden, sowie Auskunft über diese Daten erhalten.
+    </li>
+    <li>
+      <strong>Recht auf Berichtigung:</strong> Sie können die Berichtigung unrichtiger oder die Vervollständigung unvollständiger Daten verlangen.
+    </li>
+    <li>
+      <strong>Recht auf Löschung und Einschränkung der Verarbeitung:</strong> Sie können die unverzügliche Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen, sofern dem keine gesetzlichen Aufbewahrungsfristen entgegenstehen.
+    </li>
+    <li>
+      <strong>Recht auf Datenübertragbarkeit:</strong> Sie haben das Recht, die von Ihnen bereitgestellten Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen zu verlangen.
+    </li>
+    <li>
+      <strong>Beschwerde bei einer Aufsichtsbehörde:</strong> Sollten Sie der Ansicht sein, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt, haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.
+    </li>
+  </ul>
+  <hr>
+
+  <h2>7. Bereitstellung der App und der Support-Website</h2>
+  <h3>7.1. App-Bereitstellung über den Apple App Store</h3>
+  <p>
+    Unsere App <strong>Vacation Tracker</strong> wird über den Apple App Store bereitgestellt. Bei der Nutzung des App Stores verarbeitet Apple (Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA) personenbezogene Daten in eigener datenschutzrechtlicher Verantwortung. Auf diese Verarbeitungsvorgänge haben wir keinen Einfluss. Weitere Informationen hierzu entnehmen Sie bitte der Datenschutzerklärung von Apple.
+  </p>
+  <p>
+    Sobald Sie die App auf Ihrem Endgerät installieren und nutzen, werden die oben genannten Daten – insbesondere Standortdaten, Geodaten aus Bildmetadaten sowie manuelle Reiseeinträge – ausschließlich lokal gespeichert und verarbeitet.
+  </p>
+  <h3>7.2. Support-Website bei GitHub Pages</h3>
+  <p>
+    Unsere Support-Website wird über GitHub Pages (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA) gehostet. Die Website dient ausschließlich der Bereitstellung dieser Datenschutzerklärung sowie von Screenshots. Dabei werden lediglich notwendige Protokolldaten (z. B. Zugriffszeiten, IP-Adressen) erhoben, soweit dies technisch erforderlich ist. Auf diese Verarbeitungsvorgänge haben wir nur insoweit Einfluss, als es zur Bereitstellung unserer Inhalte benötigt wird.
+  </p>
+  <hr>
+
+  <h2>8. Keine Verwendung von Cookies</h2>
+  <p>
+    Weder in der App noch auf der Support-Website werden Cookies eingesetzt. Bitte beachten Sie, dass bei der Nutzung der Support-Website durch den Hoster (GitHub Pages) Protokolldaten (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs) erhoben werden können.
+  </p>
+  <hr>
+
+  <h2>9. Plug-ins, eingebettete Funktionen und Inhalte</h2>
+  <p>
+    Die App <strong>Vacation Tracker</strong> und die zugehörige Support-Website binden keine externen Plug-ins oder Inhalte von Drittanbietern ein – abgesehen von der Nutzung von Apple Maps für die Kartendarstellung. Sollten künftig externe Inhalte integriert werden, verpflichten wir uns, die jeweiligen Datenschutzbestimmungen einzuhalten und, sofern erforderlich, Ihre Einwilligung einzuholen.
+  </p>
+  <hr>
+
+  <h2>10. Haftungsausschluss</h2>
+  <p>
+    Die Nutzung der App erfolgt auf eigene Verantwortung. Wir übernehmen keine Haftung für eventuelle Schäden oder Datenschutzverletzungen, die durch eine unsachgemäße Nutzung der App oder durch den Verlust der lokal gespeicherten Daten entstehen. Bitte beachten Sie, dass insbesondere die kontinuierliche Erfassung von Standortdaten sensible Informationen beinhaltet – die Kontrolle über diese Verarbeitung liegt allein in Ihrer Hand.
+  </p>
+  <hr>
+
+  <h2>11. Änderung und Aktualisierung dieser Datenschutzerklärung</h2>
+  <p>
+    Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu ändern oder zu aktualisieren, sofern sich die Datenverarbeitung ändert oder neue rechtliche Vorgaben in Kraft treten. Bitte informieren Sie sich regelmäßig über den aktuellen Stand dieser Erklärung. Sollten Änderungen eintreten, die Ihre Mitwirkung erfordern (z. B. erneute Einwilligungen), werden wir Sie gesondert informieren.
+  </p>
+  <hr>
+
+  <h2>12. Begriffsdefinitionen</h2>
+  <p>Im Folgenden erläutern wir die wichtigsten in dieser Datenschutzerklärung verwendeten Begriffe:</p>
+  <ul>
+    <li>
+      <strong>Personenbezogene Daten:</strong> Alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.
+    </li>
+    <li>
+      <strong>Verarbeitung:</strong> Jeder Vorgang im Zusammenhang mit personenbezogenen Daten, wie das Erheben, Speichern, Ändern, Übermitteln oder Löschen.
+    </li>
+    <li>
+      <strong>Standortdaten:</strong> Daten, die den aktuellen geografischen Standort einer Person beschreiben, welche in unserer App kontinuierlich erfasst werden.
+    </li>
+    <li>
+      <strong>Einwilligung:</strong> Die freiwillige, spezifische, informierte und unmissverständliche Willensbekundung, durch die Sie in die Verarbeitung der Sie betreffenden personenbezogenen Daten einwilligen.
+    </li>
+  </ul>
+  <hr>
+  <p>
+    <strong>Hinweis:</strong> Diese Datenschutzerklärung bezieht sich ausschließlich auf die Verarbeitung von Daten im Rahmen der Nutzung der App <strong>Vacation Tracker</strong> und der zugehörigen Support-Website. Da sämtliche Daten ausschließlich lokal auf Ihrem Gerät verarbeitet werden, erfolgt keine Übertragung an externe Server, abgesehen von der Nutzung von Apple Maps und der Hosting-Dienste von GitHub Pages.
+  </p>
+  <p>
+    Bitte beachten Sie, dass dieser Entwurf lediglich als Grundlage dient und ggf. an spezielle rechtliche Anforderungen oder weitere Funktionen der App angepasst werden muss. Sollten Sie Fragen oder Anmerkungen zu dieser Datenschutzerklärung haben, können Sie sich jederzeit unter der oben angegebenen E-Mail-Adresse an uns wenden.
+  </p>
+  <section>
+      <p>
+        Wenn Sie Fragen zum Datenschutz haben, Ihre Rechte ausüben möchten oder der Auffassung sind, 
+        dass wir bei der Verarbeitung Ihrer personenbezogenen Daten gegen datenschutzrechtliche Bestimmungen verstoßen, 
+        nehmen Sie gerne Kontakt zu uns auf:
+      </p>
+      <p>
+        <strong>Aaron Bucher</strong><br />
+        E-Mail: 
+        <a href="mailto:aaron.bucher@icloud.com">aaron.bucher@icloud.com</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER (optional) -->
+  <footer>
+    <p>© 2024 Pint Party. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
