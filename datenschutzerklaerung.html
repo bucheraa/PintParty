@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Datenschutzerklärung – Vacation Tracker</title>
+  <meta charset="UTF-8">
+  <title>Datenschutzerklärung - TripTrail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     /* -------- RESET & BASIC STYLES -------- */
     * {
@@ -29,7 +29,7 @@
       text-decoration: underline;
     }
 
-    /* -------- HEADER (ANLEHNUNG AN LANDING-PAGE) -------- */
+    /* -------- HEADER -------- */
     header {
       display: flex;
       justify-content: space-between;
@@ -46,46 +46,50 @@
       gap: 1rem;
     }
 
-    /* -------- HAUPTTEIL (MAIN) -------- */
-    main {
-      max-width: 800px;
+    body {
+      font-family: sans-serif;
+      max-width: 960px;
       margin: 2rem auto;
-      padding: 0 5%;
-    }
-
-    main h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      font-weight: 700;
-      text-align: center;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    section h2 {
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
-      font-size: 1.2rem;
+      padding: 0 1rem;
+      line-height: 1.6;
       color: #333;
     }
-
-    section p,
-    section li {
-      margin: 10px 0;
-      color: #555;
+    h1, h2, h3 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
     }
-
-    section ul {
-      list-style-type: disc;
-      padding-left: 20px;
+    h1 {
+      font-size: 1.8em;
     }
-
-    section h3 {
-      margin-top: 1.5rem;
-      font-size: 1rem;
-      color: #444;
+    h2 {
+      font-size: 1.4em;
+    }
+    h3 {
+      font-size: 1.2em;
+    }
+    pre {
+      background: #f8f8f8;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 0.1rem 0.3rem;
+    }
+    hr {
+      margin: 2em 0;
+    }
+    .disclaimer {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+    .toc ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .toc ul li {
+      margin: 0.3em 0;
     }
 
     /* -------- FOOTER (OPTIONAL) -------- */
@@ -97,9 +101,20 @@
       border-top: 1px solid #e0e0e0;
       margin-top: 2rem;
     }
-
   </style>
 </head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">TripTrail</div>
+    <nav>
+      <div class="nav-links">
+        <!-- Link back to homepage -->
+        <a href="index.html">Home</a>
+      </div>
+    </nav>
+  </header>
+
 <body>
 
   <!-- HEADER -->
