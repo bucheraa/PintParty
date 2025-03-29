@@ -38,6 +38,26 @@
       display: flex;
       gap: 1rem;
     }
+    /* -------- SCREENSHOTS GRID -------- */
+    .screenshots {
+      display: flex;
+      flex-wrap: nowrap;         /* Keine Zeilenumbrüche */
+      overflow-x: auto;          /* Horizontal scrollen bei Bedarf */
+      gap: 1.5rem;
+      padding: 3rem 5%;
+    }
+
+    .screenshots img {
+      width: 250px;              /* Breite der Screenshots festlegen */
+      flex-shrink: 0;            /* Verhindert, dass Bilder zusammenschrumpfen */
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .screenshots img:hover {
+      transform: scale(1.02);
+    }
     .nav-links a {
       color: #0071e3;
       font-weight: 500;
@@ -187,6 +207,16 @@
   <section class="hero">
     <h1>TripTrail Support</h1>
     <p>Your guide to using TripTrail and getting help.</p>
+  </section>
+
+    <!-- SCREENSHOTS GRID -->
+  <section id="screenshots" class="screenshots">
+    <!-- Replace src with real screenshot URLs or local images -->
+    <img src="./Screenshots/1.png" alt="Screenshot 1">
+    <img src="./Screenshots/2.png" alt="Screenshot 2">
+    <img src="./Screenshots/3.png" alt="Screenshot 3">
+    <img src="./Screenshots/4.png" alt="Screenshot 4">
+    <img src="./Screenshots/5.png" alt="Screenshot 5">
   </section>
   
   <!-- FAQ SECTION -->
