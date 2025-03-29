@@ -3,28 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pint Party - Drinking Games</title>
+  <title>TripTrail Support</title>
   <style>
     /* -------- RESET & BASIC STYLES -------- */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", 
-                   Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
-
     body {
-      color: #1c1c1e;
       background-color: #fff;
-      line-height: 1.5;
+      color: #1c1c1e;
+      line-height: 1.6;
     }
-
     a {
       text-decoration: none;
       color: inherit;
     }
-
+    
     /* -------- NAVBAR -------- */
     header {
       display: flex;
@@ -33,165 +30,233 @@
       padding: 1rem 5%;
       border-bottom: 1px solid #e0e0e0;
     }
-
     .logo {
       font-size: 1.5rem;
       font-weight: 600;
     }
-
     .nav-links {
       display: flex;
       gap: 1rem;
     }
-
     .nav-links a {
       color: #0071e3;
       font-weight: 500;
       transition: color 0.2s ease;
     }
-
     .nav-links a:hover {
       color: #005bb5;
     }
-
+    
     /* -------- HERO SECTION -------- */
     .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
-      padding: 4rem 5% 2rem;
+      padding: 3rem 5%;
+      background: linear-gradient(135deg, #0071e3, #005bb5);
+      color: #fff;
     }
-
     .hero h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
-      font-weight: 700;
     }
-
     .hero p {
-      max-width: 600px;
       font-size: 1.125rem;
-      margin-bottom: 2rem;
-      color: #555;
-    }
-
-    /* Download button styled to mimic Apple’s aesthetic */
-    .download-btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #0071e3;
-      border-radius: 30px;
-      color: #fff;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: background-color 0.2s ease;
-    }
-
-    .download-btn:hover {
-      background-color: #005bb5;
-    }
-
-    /* -------- SCREENSHOTS GRID -------- */
-    .screenshots {
-      display: flex;
-      flex-wrap: nowrap;         /* Keine Zeilenumbrüche */
-      overflow-x: auto;          /* Horizontal scrollen bei Bedarf */
-      gap: 1.5rem;
-      padding: 3rem 5%;
-    }
-
-    .screenshots img {
-      width: 250px;              /* Breite der Screenshots festlegen */
-      flex-shrink: 0;            /* Verhindert, dass Bilder zusammenschrumpfen */
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .screenshots img:hover {
-      transform: scale(1.02);
-    }
-
-    /* -------- PRIVACY SECTION -------- */
-    .privacy-section {
-      padding: 3rem 5%;
-      background-color: #f9f9f9;
-    }
-
-    .privacy-section h2 {
-      font-size: 2rem;
       margin-bottom: 1.5rem;
     }
-
-    .privacy-section p {
-      max-width: 700px;
-      line-height: 1.6;
+    
+    /* -------- FAQ SECTION -------- */
+    .faq-section {
+      padding: 2rem 5%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    details {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    details[open] {
+      background-color: #f9f9f9;
+    }
+    summary {
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    .faq-content {
+      margin-top: 0.5rem;
+      padding-left: 1rem;
+      font-size: 1rem;
       color: #555;
     }
-
+    
+    /* -------- USAGE SECTION -------- */
+    .usage-section {
+      padding: 2rem 5%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .usage-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .usage-section p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #555;
+    }
+    
+    /* -------- CONTACT FORM SECTION -------- */
+    .contact-section {
+      padding: 2rem 5%;
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    .contact-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form label {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    .contact-form button {
+      padding: 0.75rem;
+      background-color: #0071e3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #005bb5;
+    }
+    
     /* -------- FOOTER -------- */
     footer {
       text-align: center;
-      padding: 2rem 5%;
-      color: #888;
+      padding: 1.5rem 5%;
       font-size: 0.875rem;
+      color: #888;
+      border-top: 1px solid #e0e0e0;
     }
-
-    footer a {
-      color: #0071e3;
-    }
-
   </style>
 </head>
 <body>
-
   <!-- NAVIGATION BAR -->
   <header>
     <div class="logo">TripTrail</div>
     <nav>
       <div class="nav-links">
-        <a href="#screenshots">Screenshots</a>
-        <!-- Verlinkung zur separaten Datenschutz-Seite -->
-        <a href="datenschutzerklaerung.html">Datenschutz</a>
+        <a href="support.html">Support</a>
         <a href="privacy.html">Privacy Policy</a>
-
       </div>
     </nav>
   </header>
-
+  
   <!-- HERO SECTION -->
   <section class="hero">
-    <h1>Welcome to TripTrail</h1>
-    <p>Track your trips fully automatically, keep track of your trips with maps and statistics and much more!</p>
-    <!-- This button could be linked to the App Store URL directly -->
-    <a class="download-btn" 
-       href="https://apps.apple.com/" 
-       target="_blank" 
-       rel="noopener noreferrer">
-      Download on the App Store
-    </a>
+    <h1>TripTrail Support</h1>
+    <p>Your guide to using TripTrail and getting help.</p>
   </section>
-
-  <!-- SCREENSHOTS GRID -->
-  <section id="screenshots" class="screenshots">
-    <!-- Replace src with real screenshot URLs or local images -->
-    <img src="./Screenshots/1.png" alt="Screenshot 1">
-    <img src="./Screenshots/2.png" alt="Screenshot 2">
-    <img src="./Screenshots/3.png" alt="Screenshot 3">
-    <img src="./Screenshots/4.png" alt="Screenshot 4">
-    <img src="./Screenshots/5.png" alt="Screenshot 5">
+  
+  <!-- FAQ SECTION -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+    <details>
+      <summary>How does TripTrail automatically track my trips?</summary>
+      <div class="faq-content">
+        <p>TripTrail uses your device's location data to detect significant changes in your whereabouts. This allows the app to automatically record and display the countries you visit on your travel profile.</p>
+      </div>
+    </details>
+    
+    <details>
+      <summary>Is my location data private?</summary>
+      <div class="faq-content">
+        <p>Yes, your location data is used solely to enhance your travel experience by automatically updating your trip information. It is not shared with third parties.</p>
+      </div>
+    </details>
+    
+    <details>
+      <summary>What if I grant limited access to my photos?</summary>
+      <div class="faq-content">
+        <p>If you choose limited access, you can manually select additional photos for TripTrail to scan. If no new images are detected, you will be prompted to update your selection.</p>
+      </div>
+    </details>
+    
+    <details>
+      <summary>How can I add the TripTrail widget?</summary>
+      <div class="faq-content">
+        <p>On your iPhone, long-press the home screen, tap the '+' icon, and search for "TripTrail". Then add the widget to your home screen for quick access to your travel stats.</p>
+      </div>
+    </details>
   </section>
-
- 
-
+  
+  <!-- USAGE SECTION -->
+  <section class="usage-section">
+    <h2>How to Use TripTrail</h2>
+    <p><strong>Automatic Trip Tracking:</strong> TripTrail continuously monitors your location for significant changes and automatically updates your travel profile with the countries you visit.</p>
+    <p><strong>Photo Scanning:</strong> The app scans the location metadata embedded in your photos to further enrich your travel history.</p>
+    <p><strong>Statistics & Maps:</strong> Explore your travel history with interactive maps and detailed statistics for a comprehensive overview of your journeys.</p>
+    <p><strong>Widget:</strong> Easily add the TripTrail widget to your home screen to view your latest travel stats at a glance.</p>
+  </section>
+  
+  <!-- CONTACT FORM SECTION -->
+  <section class="contact-section">
+    <h2>Contact Support</h2>
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="Your email" required>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
   <!-- FOOTER -->
   <footer>
     <p>© 2025 TripTrail. All rights reserved.</p>
     <p>
-      <a href="mailto:aaron.bucher@icloud.com">Contact Support</a>
+      <a href="mailto:aaron.bucher@icloud.com">Contact: aaron.bucher@icloud.com</a>
     </p>
   </footer>
-
 </body>
 </html>
